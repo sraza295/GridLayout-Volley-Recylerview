@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_color="@color/colorTranparent"
+                app:civ_border_width="2dp" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/checkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                app:color_checked="@color/colorPrimary"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorTranparent"
+                app:color_unchecked_stroke="@color/colorTranparent"
+                app:small_tick="true" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
